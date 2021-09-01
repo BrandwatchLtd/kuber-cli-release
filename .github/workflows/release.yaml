@@ -16,7 +16,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.BW_HUBOT_GITHUB_ACTION_TOKEN }}
+          token: ${{ secrets.GORELEASER_GITHUB_ACTION_TOKEN }}
           repository: BrandwatchLtd/slipstream
           fetch-depth: 0
 
@@ -33,4 +33,4 @@ jobs:
           args: release --rm-dist
           workdir: ./cmd/kuber-cli
         env:
-          GITHUB_TOKEN: ${{ secrets.BW_HUBOT_GITHUB_ACTION_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GORELEASER_GITHUB_ACTION_TOKEN }}
