@@ -11,4 +11,4 @@ To install the binary you can run this script on your machine
 curl --silent https://raw.githubusercontent.com/BrandwatchLtd/kuber-cli-release/master/install.sh | bash -s - -b /usr/local/bin
 ```
 
-Note: in order to install the binary in another location change `/usr/local/bin` to the path of your choice
+Note: in order to install the binary to another location change `/usr/local/bin` to the path of your choice
