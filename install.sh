@@ -64,8 +64,10 @@ get_binaries() {
   case "$PLATFORM" in
     darwin/386) BINARIES="kuber" ;;
     darwin/amd64) BINARIES="kuber" ;;
+    darwin/arm64) BINARIES="kuber" ;;
     linux/386) BINARIES="kuber" ;;
     linux/amd64) BINARIES="kuber" ;;
+    linux/arm64) BINARIES="kuber" ;;
     *)
       log_crit "platform $PLATFORM is not supported.  Make sure this script is up-to-date and file request at https://github.com/${PREFIX}/issues/new"
       exit 1
